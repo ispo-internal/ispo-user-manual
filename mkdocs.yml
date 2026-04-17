@@ -1,0 +1,42 @@
+site_name: ISPO Dokumentácia
+
+docs_dir: main
+use_directory_urls: true
+extra_css:
+    - css/custom.css
+extra:
+  generator: false
+
+theme:
+  name: material
+  language: sk
+  logo: images/logo.svg
+  custom_dir: overrides
+  palette:
+    primary: custom
+    accent: custom
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+
+nav:
+  - Účel a cieľ dokumentu: ucel-ciel-dokumentu.md
+  - Zoznam skratiek: zoznam-skratiek.md
+  - ISPO: o-systeme-ISPO.md
+  - Registrácia: 1-registracia.md
+  - Pracovné pozície: 2-pracovne-pozicie.md
+  - Výzva: 3-vyzva.md
+  - ŽoPPM: 4-zoppm.md
+  - Priame vyzvanie: 5-priame-vyzvanie.md
+  - Posudzovanie ŽoP: 6-posudzovanie-zop.md
+  - Evidenčné projekty: 7-evidencne-projekty.md
+  - Vkladanie údajov: 8-crud.md
+  - Reporting: 9-datamart.md
+  - Kontakt na správcu: 10-kontakt.md
+
+copyright: "© 2025 ISPO – Plán obnovy | Dokumentácia systému"

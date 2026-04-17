@@ -1,0 +1,262 @@
+/* === Import Inter font === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* === Root color overrides for ISPO Blue === */
+:root {
+  --md-primary-fg-color: #003087;
+  --md-primary-fg-color--light: #0050d7;
+  --md-primary-fg-color--dark: #002170;
+  --md-accent-fg-color: #0050d7;
+  --md-typeset-a-color: #003087;
+}
+
+/* === Base === */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f1f1f;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* === Corrected Shrunk Header + Logo Alignment === */
+.md-header {
+  background-color: #003087;
+  color: #fff;
+  height: 58px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.md-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.md-logo {
+  height: 36px !important;
+  margin-top: 0px;
+}
+
+.md-header__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff !important;
+  margin-left: 8px;
+}
+
+/* === Search bar === */
+.md-search__form {
+  border-radius: 6px;
+  background-color: #002a6d;
+  height: 36px;
+  font-size: 14px;
+}
+
+.md-search__input {
+  background-color: transparent;
+  color: #fff;
+  padding-left: 2.5rem;
+}
+
+.md-search__icon {
+  color: #ffffff;
+}
+
+/* === Top menu tabs === */
+.md-tabs__link {
+  padding: 0.5rem 1rem !important;
+  font-size: 15px;
+}
+
+/* === Sidebar === */
+.md-sidebar {
+  background-color: #ffffff;
+  border-right: none;
+  box-shadow: none;
+}
+
+.md-sidebar__inner {
+  padding-top: 0 !important;
+}
+
+.md-nav__title {
+  display: none !important;
+}
+
+/* === Submenu indentation === */
+.md-nav__item .md-nav__link {
+  padding-left: 1.5rem;
+}
+
+.md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 2rem;
+}
+
+.md-nav__item .md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 2.5rem;
+}
+
+.md-nav__item--active > .md-nav__link {
+  font-weight: 600;
+  color: #003087;
+  border-left: 4px solid #003087;
+  background-color: #e9efff;
+}
+
+.md-nav__link {
+  font-size: 15px;
+  color: #2c3e50;
+  line-height: 1.3;
+}
+
+.md-nav__link:hover {
+  background-color: #f2f2f2;
+}
+
+/* === Main content layout === */
+.md-main__inner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.md-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.md-main {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* === Footer spacing fix === */
+.md-footer {
+  margin-top: 2rem !important;
+  padding-top: 1rem !important;
+}
+
+/* === Typography === */
+.md-typeset {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.md-typeset p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.md-typeset a {
+  color: #003087;
+  text-decoration: none;
+}
+
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset h1 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.5rem;
+  color: #1f1f1f;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h4 {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* === Code blocks === */
+.md-typeset code {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* === Tables === */
+.md-typeset table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+}
+
+.md-typeset th,
+.md-typeset td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.md-typeset th {
+  background: #f3f3f3;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+.md-typeset tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* === Hide right-hand TOC === */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+.md-content__inner {
+  margin-right: 0 !important;
+}
+
+/* === Responsive enhancements === */
+@media screen and (max-width: 768px) {
+  .md-content {
+    padding: 1rem;
+  }
+
+  .md-sidebar {
+    padding-left: 0;
+  }
+}
+
+.md-search__input {
+  color: #ffffff; /* Match magnifier icon on blur */
+  background-color: transparent;
+  transition: color 0.2s ease;
+}
+
+.md-search__input:focus {
+  color: #1f1f1f; /* Dark text while typing */
+}
