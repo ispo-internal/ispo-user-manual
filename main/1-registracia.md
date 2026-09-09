@@ -26,11 +26,11 @@ Po vyplnení registračného formuláru žiadosti o registráciu konta je
 potrebné **vygenerovanú žiadosť** vo formáte PDF vytlačiť a podpísať
 žiadateľom a oprávnenou osobou (štatutárom) a následne zamestnanec s
 pracovnou pozíciou Admin VIR zašle sken žiadosti emailom na
-adresu: <ispo-is@vlada.gov.sk>   
+adresu: <ispo_is@vicepremier.gov.sk>   
 
 V prípade **skončenia pracovného pomeru** je používateľ, respektíve jeho
 zamestnávateľ, povinný bezodkladne oznámiť túto skutočnosť Centru
-podpory ISPO na adrese <ispo-is@vlada.gov.sk>. Používateľ je zároveň
+podpory ISPO na adrese <ispo_is@vicepremier.gov.sk>. Používateľ je zároveň
 povinný bezodkladne oznámiť správcovi systému akékoľvek ďalšie
 skutočnosti, ktoré by mali vplyv na informácie uvedené v žiadosti
 o registráciu a oprávnenosť prístupu do systému. Zmena prístupových
