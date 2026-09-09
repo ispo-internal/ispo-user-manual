@@ -1,4 +1,4 @@
-site_name: ISPO Dokumentácia
+site_name: ISPO Používateľská príručka
 
 docs_dir: main
 use_directory_urls: true
@@ -39,4 +39,4 @@ nav:
   - Reporting: 9-datamart.md
   - Kontakt na správcu: 10-kontakt.md
 
-copyright: "© 2025 ISPO – Plán obnovy | Dokumentácia systému"
+copyright: "© 2026 ISPO – Plán obnovy | Dokumentácia systému"
