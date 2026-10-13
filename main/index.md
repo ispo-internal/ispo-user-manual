@@ -1,6 +1,6 @@
-<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-  <img src="media/po-logo.svg" alt="Plán obnovy" style="height: 77px;">
-  <img src="media/eu.svg" alt="EU" style="height: 42px;">
+<div class="logo-container">
+  <img src="media/po-logo.svg" alt="Plán obnovy" style="height: 50px;">
+  <img src="media/eu.svg" alt="EU" style="height: 50px;">
 </div>
 
 # Manuál ISPO pre vykonávateľov investícií a reforiem
