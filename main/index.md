@@ -1,4 +1,7 @@
-![Obrázok](media/po-logo.svg)
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+  <img src="media/po-logo.svg" alt="Plán obnovy" style="height: 77px;">
+  <img src="media/eu.svg" alt="EU" style="height: 42px;">
+</div>
 
 # Manuál ISPO pre vykonávateľov investícií a reforiem
 
@@ -39,9 +42,7 @@ a znalostnú ekonomiku</td>
 </tr>
 <tr>
 <td><strong>Schválil:</strong></td>
-<td style="text-align: left;"><p>Dávid Mach - riaditeľ Odboru správy a prevádzky informačného systému Plánu obnovy a odolnosti</p></td>
+<td style="text-align: left;">Dávid Mach - riaditeľ Odboru správy a prevádzky informačného systému Plánu obnovy a odolnosti</td>
 </tr>
 </tbody>
 </table/>
-
-![Obrázok](media/eu.svg)

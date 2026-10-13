@@ -1,0 +1,890 @@
+
+<!doctype html>
+<html lang="sk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../6-posudzovanie-zop/">
+      
+      
+        <link rel="next" href="../8-crud/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Evidenčné projekty - ISPO Používateľská príručka</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-evidencne-projekty" class="md-skip">
+          Preskočiť na obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Hlavička">
+    <a href=".." title="ISPO Používateľská príručka" class="md-header__button md-logo" aria-label="ISPO Používateľská príručka" data-md-component="logo">
+      
+  <img src="../images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ISPO Používateľská príručka
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Evidenčné projekty
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hľadať" placeholder="Hľadať" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhľadávanie">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistiť" aria-label="Vyčistiť" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Spúšťam hľadanie
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigácia" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ISPO Používateľská príručka" class="md-nav__button md-logo" aria-label="ISPO Používateľská príručka" data-md-component="logo">
+      
+  <img src="../images/logo.svg" alt="logo">
+
+    </a>
+    ISPO Používateľská príručka
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ucel-ciel-dokumentu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Účel a cieľ dokumentu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zoznam-skratiek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoznam skratiek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../o-systeme-ISPO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISPO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-registracia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registrácia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-pracovne-pozicie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pracovné pozície
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-vyzva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Výzva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-zoppm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ŽoPPM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-priame-vyzvanie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priame vyzvanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-posudzovanie-zop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posudzovanie ŽoP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidenčné projekty
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidenčné projekty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-vytvorenie-evidencneho-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1) Vytvorenie evidenčného projektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-vytvorenie-internej-ziadosti-o-platbu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2) Vytvorenie internej žiadosti o platbu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8-crud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vkladanie údajov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9-datamart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-kontakt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontakt na správcu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71-vytvorenie-evidencneho-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1) Vytvorenie evidenčného projektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72-vytvorenie-internej-ziadosti-o-platbu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2) Vytvorenie internej žiadosti o platbu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7-evidencne-projekty">7. Evidenčné projekty</h1>
+<p>Na vytvorenie a editovanie evidenčných projektov ako aj následne
+vytváranie interných ŽoP v ISPO potrebujeme pracovnú pozíciu <strong>Editor
+ŽoP a projektu</strong>.</p>
+<h2 id="71-vytvorenie-evidencneho-projektu">7.1) Vytvorenie evidenčného projektu</h2>
+<p>V ľavom paneli klikneme na sekciu <strong>Projekty</strong>. Zobrazí sa zoznam
+všetkých typov projektov v ISPO pod daným orgánom. Pre vytvorenie nového
+evidenčného projektu klikneme na tlačidlo <strong>Nový evidenčný projekt</strong>
+v pravom hornom rohu.</p>
+<p><img alt="Obrázok" src="../media/image320.jpeg" /></p>
+<p>Najskôr vyplníme polia <strong>Opatrenie</strong> a <strong>Vykonávateľ</strong>. Pole <strong>Kód
+projektu</strong> systém automaticky vygeneruje podľa príručky k úložisku NIKA
+v zložení:</p>
+<p><strong><em>Číslo komponentu -&gt; veľké I/R -&gt; číslo investície/reformy -&gt;
+pomlčka -&gt; číslo vykonávateľa -&gt; pomlčka -&gt; veľké E a poradové číslo
+evidenčného projektu</em></strong></p>
+<p>Kód projektu je možné editovať. Následne vyplníme aj <strong>Názov projektu</strong>
+a vyberieme relevantný <strong>stav</strong> projektu.</p>
+<p><img alt="Obrázok" src="../media/image321.jpeg" /></p>
+<p>V časti <strong>Výdavky</strong> môžeme vyplniť polia pre sumy ako <strong><em>Suma z Plánu
+obnovy bez DPH, Čiastka DPH z Plánu obnovy, Suma vlastných zdrojov
+žiadateľa, Suma verejných zdrojov okrem zdrojov EÚ</em></strong> a <strong><em>Suma
+verejných zdrojov EÚ</em></strong>. Následne klikneme na tlačidlo <strong>Prepočítať</strong>
+a <strong>Celková suma projektu</strong> sa prepočíta automaticky.</p>
+<p><img alt="Obrázok" src="../media/image322.jpeg" /></p>
+<p>V časti <strong>Zmluva</strong> môžeme vyplniť polia ako <strong><em>Číslo zmluvy, Dátum
+platnosti zmluvy, Dátum uzavretia zmluvy, Dátum zverejnenia zmluvy
+v CRZ</em></strong> a <strong><em>Link CRZ</em></strong>. Zároveň v tejto časti môžeme nahrať prílohu
+zmluvy tak, že klikneme na tlačidlo <strong>Vyberte súbory</strong> a vyberieme súbor
+z nášho zariadenia.</p>
+<p><img alt="Obrázok" src="../media/image323.jpeg" /></p>
+<p><strong>Upozornenie</strong>! <em>Pokiaľ sme nastavili stav projektu </em><em>Zazmluvnený</em><em>,
+údaje o zmluve musíme uviesť tiež.</em></p>
+<p>Pre pridanie <strong>Prijímateľa</strong> klikneme na tlačidlo <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image324.jpeg" /></p>
+<p>Označíme organizáciu a do poľa <strong>Výber organizácie</strong> uvedieme názov
+alebo IČO organizácie, ktorú chceme pridať. Systém ISPO spárovaný s RPO
+navrhne zoznam organizácií, z ktorých si vyberieme požadovanú
+a potvrdíme tlačidlom <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image325.jpeg" /></p>
+<p>Takto pridaný prijímateľ sa zobrazí v základnom tvare, systém však na
+pozadí dotiahne všetky údaje o organizácii. V časti <strong>Poznámka</strong> môžeme
+uviesť doplňujúce údaje k projektu. Následne klikneme na tlačidlo
+<strong>Pridať</strong>, čím potvrdíme vytvorenie evidenčného projektu.</p>
+<p><img alt="Obrázok" src="../media/image326.jpeg" /></p>
+<p>Takto vytvorený projekt sa nachádza v zozname <strong>Projekty</strong> vždy na
+poslednom mieste.</p>
+<p>Pre vyhľadanie evidenčných projektov v zozname <strong>Projekty</strong> môžeme
+použiť filter <strong>Typ projektu</strong>, v ktorom vyberieme možnosť <strong>Evidenčný
+projekt</strong>. Zároveň musíme zakliknúť možnosť <strong>And</strong> tak, aby bola
+označená červenou farbou. Filtrovať môžeme aj pomocou módu spracovania
+<strong>Import</strong> a <strong>ISPO</strong>.</p>
+<p><img alt="Obrázok" src="../media/image327.jpeg" /></p>
+<h2 id="72-vytvorenie-internej-ziadosti-o-platbu">7.2) Vytvorenie internej žiadosti o platbu</h2>
+<p>Na to aby bolo možné vytvoriť internú ŽoP k evidenčnému projektu je
+potrebné, aby bol projekt v stave <strong>Zazmluvnený</strong>. V detaile evidenčného
+projektu v záložke <strong>Žiadosti o platbu</strong> sa nachádza zoznam žiadostí
+o platbu, ktoré boli zaevidované k danému projektu. Ak je zoznam
+prázdny, k projektu ešte nebola vytvorená žiadna ŽoP. Pre vytvorenie
+novej ŽoP klikneme na tlačidlo <strong>Vytvoriť žiadosť o platbu</strong>.</p>
+<p><img alt="Obrázok" src="../media/image328.jpeg" /></p>
+<p>Po otvorení modálneho okna v poli <strong>Typ žiadosti</strong> vyberieme typ ŽoP.</p>
+<p><img alt="Obrázok" src="../media/image329.jpeg" /></p>
+<p>Po výbere jednej z možností napr. <em>Priebežná platba/Refundácia</em> môžeme
+uviesť, či sa jedná o záverečnú žiadosť o platbu. Následne klikneme na
+tlačidlo <strong>Vytvoriť žiadosť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image330.jpeg" /></p>
+<p>Otvorí sa detail ŽoP v stave <strong>Rozpracovaná</strong> s kódom rozpracovanej
+ŽoP<em>,</em> vzorovo <em>IRZ-260220-000752</em>. Po zaevidovaní ŽoP sa tento kód
+zmení na štandardný kód žiadosti. Záložka <strong>Info</strong> pozostáva zo
+všeobecných údajov o prijímateľovi a údajov o projekte.</p>
+<p><img alt="Obrázok" src="../media/image331.jpeg" /></p>
+<p>Záložka <strong>ŽoP</strong> je rozdelená do jednotlivých sekcií. Kliknutím na
+jednotlivé sekcie sa otvorí ich detail. Tlačidlo <strong>Odoslať žiadosť</strong> je
+zablokované, pokiaľ nevyplníme všetky povinné údaje.</p>
+<p><img alt="Obrázok" src="../media/image332.jpeg" /></p>
+<p>7.2.1) Sekcie <strong>Identifikácia žiadosti o platbu</strong> a <strong>Identifikácia
+prijímateľa</strong> sú automaticky vyplnené. Ide o všeobecné informácie
+o žiadosti a prijímateľovi.</p>
+<p><img alt="Obrázok" src="../media/image333.jpeg" /></p>
+<p>7.2.2) Tretia v poradí je sekcia, ktorej názov a obsah závisí od typu
+ŽoP.</p>
+<p>V prípade typu ŽoP <em>Poskytnutie zálohy</em> sa táto sekcia volá
+<strong>Poskytnutie zálohy</strong>. V tejto sekcii vyplníme polia ako <strong>Suma z Plánu
+obnovy bez DPH, €</strong> a <strong>Čiastka DPH z Plánu obnovy, €</strong>, prípadne môžeme
+doložiť prílohu. Následne klikneme na tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image334.jpeg" /></p>
+<p>V prípade typu ŽoP <em>Vrátenie</em> sa táto sekcia volá <strong>Vrátenie</strong>. Vyplníme
+v nej polia ako <strong>Suma z Plánu obnovy bez DPH, €</strong> a <strong>Čiastka DPH z
+Plánu obnovy, €</strong>, prípadne môžeme doložiť prílohu. Následne klikneme na
+tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image335.jpeg" /></p>
+<p>V prípade typov ŽoP ako <em>Priebežná platba/Refundácia</em>, <em>Zúčtovanie
+zálohy, Poskytnutie predfinancovania</em> a <em>Zúčtovanie predfinancovania</em> sa
+sekcia v poradí nazýva <strong>Vykázané výdavky</strong>. Pre pridanie nového výdavku
+klikneme na tlačidlo <strong>Pridať výdavok</strong>.</p>
+<p><img alt="Obrázok" src="../media/image336.jpeg" /></p>
+<p>V modálnom okne uvedieme <strong>Názov výdavku</strong> a klikneme na tlačidlo
+<strong>Vytvoriť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image337.jpeg" /></p>
+<p>Takto vytvorený výdavok sa zobrazí v zozname výdavkov. Cez tlačidlo
+<strong>Tri bodky</strong> na výdavku ho môžeme premenovať, odstrániť alebo sa dostať
+do jeho detailu na zoznam dokladov. Na zoznam dokladov sa dostaneme aj
+kliknutím na daný výdavok.</p>
+<p><img alt="Obrázok" src="../media/image338.jpeg" /></p>
+<p>V prípade, že ešte nebol pridaný žiadny doklad k výdavku, zoznam
+dokladov je prázdny. Pre pridanie dokladu klikneme na tlačidlo <strong>Nový
+doklad k výdavku</strong>.</p>
+<p><img alt="Obrázok" src="../media/image339.jpeg" /></p>
+<p>V nasledujúcej obrazovke pre zadávanie údajov nového dokladu nahráme
+prílohu k dokladu a vyplníme polia ako <strong>Názov dokladu</strong>, <strong>Číslo
+dokladu</strong> a <strong>Dátum úhrady</strong>.</p>
+<p><img alt="Obrázok" src="../media/image340.jpeg" /></p>
+<p>Následne zvolíme typ výdavku <strong>Mzdový, Tovary a služby</strong> a <strong>Iné</strong>. Ak
+vyberieme výdavok <strong>Mzdový</strong> uvedieme sumy do polí <strong>POO bez dph</strong>
+a pole <strong>Celková suma</strong> sa vypočíta automaticky. Následne vyplníme aj
+polia ako <strong>Verejné zdroje mimo EÚ</strong>, <strong>Verejné zdroje EÚ</strong> a <strong>Vlastné
+zdroje</strong> a to aj v prípade, že sú nulové.</p>
+<p><img alt="Obrázok" src="../media/image341.jpeg" /></p>
+<p>Vyplniť môžeme <strong>Údaje k zmluve</strong> ak sú relevantné.</p>
+<p><img alt="Obrázok" src="../media/image305.jpeg" /></p>
+<p>V prípade interných ŽoP sa polia <strong>Dodávateľ</strong> a <strong>Subdodávateľ</strong>
+nevypĺňajú. Pre pridanie dokladu klikneme na tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image306.jpeg" /></p>
+<p>Takto pridaný doklad sa dostane do zoznamu dokladov. Pokračovať môžeme
+pridaním ďalších dokladov alebo sa cez tlačidlo <strong>Späť</strong> môžeme vrátiť
+na zoznam výdavkov.</p>
+<p>7.2.3) Vyplniť môžeme aj sekciu <strong>Údaje o realizácii projektu</strong>.
+Klikneme na tlačidlo <strong>Upraviť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image342.jpeg" /></p>
+<p>V modálnom okne do textového okna napíšeme text o realizácii projektu.
+Následne klikneme na tlačidlo <strong>Zatvoriť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image343.jpeg" /></p>
+<p>Následne text uložíme kliknutím na tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image344.jpeg" /></p>
+<p>7.2.4) V sekcii <strong>Zoznam dodatočných príloh</strong> môžeme nahrať prílohy
+k ŽoP. Po nahratí prílohy klikneme na tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image345.jpeg" /></p>
+<p>7.2.5) V sekcii <strong>Identifikácia štatutárov</strong> označíme štatutára
+označením zaškrtávacieho políčka a potvrdíme pravdivosť tohto údaju
+aktivovaním prepínacieho tlačidla. Klikneme na tlačidlo <strong>Uložiť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image346.jpeg" /></p>
+<p>7.2.6) V sekcii <strong>Čestné vyhlásenie prijímateľa</strong> aktivujeme prepínacie
+tlačidlo. Ak sme všetko správne vyplnili a uložili, sprístupní sa aj
+tlačidlo <strong>Odoslať žiadosť</strong>. Kliknutím naň úspešne zaevidujeme internú
+ŽoP na evidenčnom projekte.</p>
+<p><img alt="Obrázok" src="../media/image347.jpeg" /></p>
+<p>Takto pridaná ŽoP sa zobrazí v zozname <strong>ŽoP -&gt; Všetky ŽoP</strong> na
+poslednom mieste. Vidieť ju môžeme aj v zozname ŽoP v detaile
+evidenčného projektu.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 ISPO – Plán obnovy | Dokumentácia systému
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skop\u00edrovan\u00e9 do schr\u00e1nky", "clipboard.copy": "Kop\u00edrova\u0165 do schr\u00e1nky", "search.result.more.one": "1 \u010fal\u0161\u00ed na tejto str\u00e1nke", "search.result.more.other": "# \u010fal\u0161\u00edch na tejto str\u00e1nke", "search.result.none": "\u017diadne vyhovuj\u00face dokumenty", "search.result.one": "Vyhovuj\u00faci dokument: 1", "search.result.other": "Vyhovuj\u00face dokumenty: #", "search.result.placeholder": "Pre vyh\u013ead\u00e1vanie za\u010dni p\u00edsa\u0165", "search.result.term.missing": "Ch\u00fdbaj\u00faci", "select.version": "Vyberte verziu"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

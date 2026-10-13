@@ -1,0 +1,1061 @@
+
+<!doctype html>
+<html lang="sk" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../7-evidencne-projekty/">
+      
+      
+        <link rel="next" href="../9-datamart/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Vkladanie údajov - ISPO Používateľská príručka</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#8-vkladanie-monitorovacich-udajov-do-ispo" class="md-skip">
+          Preskočiť na obsah
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Hlavička">
+    <a href=".." title="ISPO Používateľská príručka" class="md-header__button md-logo" aria-label="ISPO Používateľská príručka" data-md-component="logo">
+      
+  <img src="../images/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ISPO Používateľská príručka
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Vkladanie údajov
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hľadať" placeholder="Hľadať" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Vyhľadávanie">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Vyčistiť" aria-label="Vyčistiť" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Spúšťam hľadanie
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigácia" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ISPO Používateľská príručka" class="md-nav__button md-logo" aria-label="ISPO Používateľská príručka" data-md-component="logo">
+      
+  <img src="../images/logo.svg" alt="logo">
+
+    </a>
+    ISPO Používateľská príručka
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ucel-ciel-dokumentu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Účel a cieľ dokumentu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zoznam-skratiek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zoznam skratiek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../o-systeme-ISPO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISPO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-registracia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Registrácia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-pracovne-pozicie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pracovné pozície
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-vyzva/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Výzva
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-zoppm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ŽoPPM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-priame-vyzvanie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Priame vyzvanie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-posudzovanie-zop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Posudzovanie ŽoP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-evidencne-projekty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evidenčné projekty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vkladanie údajov
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vkladanie údajov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-pridanie-vyzvy-priameho-vyzvania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1) Pridanie výzvy / priameho vyzvania
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-pridanie-zoppm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2) Pridanie ŽoPPM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-pridanie-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3) Pridanie Projektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-pridanie-zop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4) Pridanie ŽoP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9-datamart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-kontakt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kontakt na správcu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Obsah">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Obsah
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-pridanie-vyzvy-priameho-vyzvania" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1) Pridanie výzvy / priameho vyzvania
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-pridanie-zoppm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2) Pridanie ŽoPPM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-pridanie-projektu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3) Pridanie Projektu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-pridanie-zop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4) Pridanie ŽoP
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="8-vkladanie-monitorovacich-udajov-do-ispo">8. Vkladanie monitorovacích údajov do ISPO</h1>
+<p>Pre používanie funkcionality <strong>Vkladanie údajov</strong>, ktorá umožňuje
+pridávať a editovať monitorovacie údaje do ISPO, potrebujeme mať
+priradenú pracovnú pozíciu <strong>Monitorovací manažér VIR</strong>. Na základe
+tohto oprávnenia môžeme editovať a evidovať monitorovacie údaje výzvy,
+priameho vyzvania, ŽoPPM, projektu a ŽoP v časti Vkladanie údajov.</p>
+<p>Táto funkcionalita nahrádza zber monitorovacích údajov cez <strong><em>Prílohu
+SIPOO č. 5.1 - 2 Vzor monitorovacích údajov</em></strong>. Funkcionalita slúži
+predovšetkým na vkladanie monitorovacích údajov, ktoré nebolo možné
+zbierať automaticky prostredníctvom funkcionalít ISPO. Napríklad výzvy
+vyhlásené mimo ISPO, priame vyzvania vyhlásené mimo ISPO, ŽoPPM
+predložené mimo ISPO, projekty predložené mimo ISPO, ŽoP predložené mimo
+ISPO.</p>
+<p>Po pridaní pracovnej pozície <strong>Monitorovací manažér VIR</strong> sa v pracovnom
+paneli objaví záložka <strong>Vkladanie údajov</strong>. Kliknutím na šípku sa objaví
+zoznam so záložkami:</p>
+<ul>
+<li>
+<p><strong><em>Výzvy</em></strong> -&gt; Obsahuje priame vyzvania aj štandardné výzvy</p>
+</li>
+<li>
+<p><strong><em>ŽoPPM</em></strong> -&gt; Žiadosti o poskytnutie prostriedkov mechanizmu</p>
+</li>
+<li>
+<p><strong><em>ŽoP</em></strong> -&gt; Žiadosti o platbu</p>
+</li>
+<li>
+<p><strong><em>Projekty</em></strong> -&gt; Projekty a prijímatelia</p>
+</li>
+</ul>
+<p><img alt="Obrázok" src="../media/image348.jpeg" />
+<img alt="Obrázok" src="../media/image349.jpeg" /></p>
+<h2 id="81-pridanie-vyzvy-priameho-vyzvania">8.1) Pridanie výzvy / priameho vyzvania</h2>
+<p>V menu <strong>Vkladanie údajov</strong> rozklikneme záložku <strong>Výzvy</strong>. Zobrazí sa
+zoznam výziev a priamych vyzvaní, ktoré už systém eviduje.</p>
+<p><img alt="Obrázok" src="../media/image350.jpeg" /></p>
+<p>V zozname sa orientujeme cez <strong><em>Kód výzvy</em></strong> a <strong><em>Názov výzvy</em></strong>. To, či
+ide o výzvu alebo priame vyzvanie, vidíme v stĺpci <strong><em>Typ</em></strong>. To, v akom
+stave je výzva či priame vyzvanie, vidíme v stĺpci <strong><em>Stav</em></strong>. To, akým
+spôsobom sa údaje dostali do ISPO, indikuje stĺpec <strong><em>Mód
+spracovania</em></strong>. Pre lepšiu orientáciu v zozname nám pomáha <strong><em>Filter</em></strong>.</p>
+<p>Mód spracovania nám hovorí o tom, akým spôsobom sa výzvy, priame
+vyzvania ako aj ďalšie údaje dostali do ISPO. Poznáme 3 spôsoby:</p>
+<ol>
+<li>
+<p>Výzvu sme vyhlásili cez ISPO (mód spracovania ISPO)</p>
+</li>
+<li>
+<p>Výzva / Priame vyzvanie nahralo Centrum podpory ISPO importom
+    z excelu podľa <strong><em>Prílohy SIPOO č. 5.1 - 2 Vzor monitorovacích
+    údajov</em></strong>, ktoré sme nahrali na Úložisko NIKA (mód spracovania
+    Import)</p>
+</li>
+<li>
+<p>Výzvu / Priame vyzvanie sme pridali cez funkcionalitu <strong>Vkladanie
+    údajov</strong> (mód spracovania Import)</p>
+</li>
+</ol>
+<p>Výzvy a priame vyzvania s módom spracovania <strong>ISPO</strong> nie je možné
+editovať cez funkcionalitu <strong>Vkladanie údajov</strong>, pretože ich editujeme
+priamo v záložke <strong>Výzvy</strong> podľa kapitoly <strong>3)</strong> a <strong>5</strong>).</p>
+<p>8.1.1) Pre pridanie výzvy klikneme na tlačidlo <strong>Vytvoriť výzvu</strong>.</p>
+<p><img alt="Obrázok" src="../media/image351.jpeg" /></p>
+<p>Typ výzvy vyberieme <strong>Štandardná výzva</strong>. Do poľa <strong>Link</strong> vložíme odkaz
+na webové znenie vyhlásenej výzvy. Zo zoznamu vyberieme <strong>Komponent</strong>,
+<strong>Opatrenie</strong> a <strong>Vykonávateľa</strong>. <strong>Kód výzvy</strong> sa na základe uvedených
+údajov vygeneruje automaticky, ale v prípade, že nie je správny, môžeme
+ho zmeniť. Ďalej uvedieme <strong>Názov výzvy</strong>.</p>
+<p><img alt="Obrázok" src="../media/image352.jpeg" /></p>
+<p>V nasledujúcej časti zo zoznamu vyberieme <strong><em>Stav výzvy</em></strong>, uvedieme
+<strong><em>Dátum vyhlásenia</em></strong>, <strong><em>Predpokladaný dátum uzavretia</em></strong>, <strong><em>Skutočný
+dátum uzavretia</em></strong> (ak je známy), <strong><em>Výšku finančných prostriedkov</em></strong> a
+<strong><em>Zostatok finančných prostriedkov</em></strong> (ak sú známe). Ku <strong><em>Schéme
+štátnej pomoci / pomoci de minimis</em></strong> a k <strong><em>Zjednodušenému vykazovaniu
+prostriedkov</em></strong> sa môžeme vyjadriť (<em>áno, nie, netýka sa</em>). Môžeme
+uviesť <strong><em>Dátum schválenia záväzného stanoviska NIKA</em></strong>
+a <strong><em>Poznámku</em></strong>. Keď máme všetko potrebné vyplnené, klikneme na
+tlačidlo <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image353.jpeg" /></p>
+<p>Takto založená výzva sa dostane do zoznamu <strong>Vkladanie údajov - Výzvy</strong>
+a kedykoľvek sa k nej môžeme vrátiť a upraviť.</p>
+<p>8.1.2) Pre pridanie priameho vyzvania klikneme na tlačidlo <strong>Vytvoriť
+výzvu</strong>.</p>
+<p><img alt="Obrázok" src="../media/image351.jpeg" /></p>
+<p>Typ vyberieme <strong>Priame vyzvanie</strong>. Do poľa <strong>Link</strong> vložíme odkaz na
+webové znenie priameho vyzvania. Zo zoznamu vyberieme <strong>Komponent</strong>,
+<strong>Opatrenie</strong> a <strong>Vykonávateľa</strong>. <strong>Kód</strong> sa na základe uvedených údajov
+vygeneruje automaticky, ale v prípade, že nie je správny, môžeme ho
+zmeniť. Ďalej uvedieme <strong>Názov priameho vyzvania</strong>.</p>
+<p><img alt="Obrázok" src="../media/image354.jpeg" /></p>
+<p>Zo zoznamu vyberieme <strong><em>Stav</em></strong> priameho vyzvania. V časti
+<strong>Prijímateľ</strong> klikneme na tlačidlo <strong>Pridať</strong>. Označíme organizáciu a
+do poľa Výber organizácie uvedieme názov alebo IČO organizácie. Systém
+ISPO spárovaný s RPO navrhne zoznam organizácií, z ktorých si vyberieme
+požadovanú a potvrdíme kliknutím na tlačidlo <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image355.jpeg" /></p>
+<p><img alt="Obrázok" src="../media/image265.jpeg" /></p>
+<p>Následne môžeme vyplniť polia ako <strong>Výška finančných prostriedkov</strong>,
+<strong>Schéma štátnej pomoci/pomoci de minimis</strong>, <strong>Zjednodušené vykazovanie
+prostriedkov</strong> a <strong>Dátum schválenia / vydania záväzného stanoviska
+NIKA</strong>. Keď máme všetko potrebné vyplnené, klikneme na tlačidlo
+<strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image356.jpeg" /></p>
+<p>Takto založené priame vyzvanie sa dostane do zoznamu <strong>Vkladanie
+údajov - Výzvy</strong> a kedykoľvek sa k nemu môžeme vrátiť a upraviť.</p>
+<h2 id="82-pridanie-zoppm">8.2) Pridanie ŽoPPM</h2>
+<p>Pre pridanie ŽoPPM v menu <strong>Vkladanie údajov</strong> rozklikneme záložku
+<strong>ŽoPPM</strong>. Zobrazí sa zoznam ŽoPPM, ktoré systém eviduje.</p>
+<p><img alt="Obrázok" src="../media/image357.jpeg" /></p>
+<p>V zozname sa orientujeme pomocou stĺpcov <strong><em>Kód žiadosti</em>*, </strong>Kód
+výzvy<strong>, </strong>Názov / meno žiadateľa<strong>, </strong>Dátum predloženia žiadosti<strong>,
+</strong>Požadovaná suma<strong><em> a </em></strong>Mód Spracovania<strong><em> Pre lepšiu orientáciu
+v zozname nám pomáha </em></strong>Filter<strong><em>. Pre pridanie ŽoPPM klikneme na
+tlačidlo </em>*Vytvoriť žiadosť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image358.jpeg" /></p>
+<p>Ak zo zoznamu v poli <strong><em>Kód výzvy</em></strong> vyberieme výzvu, <strong><em>Kód ŽoPPM</em></strong>
+nám systém automaticky vygeneruje. Ak systém kód žiadosti nevygeneruje
+alebo nie je správny, môžeme ho upraviť. Následne vyberieme <strong><em>Stav</em></strong>
+žiadosti a uvedieme <strong><em>Požadovanú sumu</em></strong> a <strong><em>Dátum predloženia</em></strong>
+<strong><em>žiadosti</em></strong>. V časti žiadateľ klikneme na tlačidlo <strong>Pridať</strong>.</p>
+<p><strong>Upozornenie</strong>! <em>Nie je možné pridať ŽoPPM, ak v systéme nie je
+evidovaná výzva. Ak v zozname nenájdeme kód výzvy, ktorý hľadáme, výzva
+nie je v systéme evidovaná.</em></p>
+<p><img alt="Obrázok" src="../media/image359.jpeg" /></p>
+<p>Po kliknutí na tlačidlo <strong>Pridať</strong> vyberieme typ osobu/organizáciu do
+poľa <strong>Výber osoby</strong> / <strong>Výber organizácie</strong> uvedieme meno
+a priezvisko/názov alebo IČO organizácie. Systém ISPO spárovaný
+s RFO/ RPO navrhne zoznam osôb/organizácií, z ktorých si vyberieme
+požadovanú a potvrdíme tlačidlom <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image325.jpeg" /></p>
+<p>Takto pridaný žiadateľ sa zobrazí v základnom tvare, systém však na
+pozadí dotiahne všetky údaje o osobe /organizácii. Rovnakým spôsobom
+môžeme pridať aj partnera.</p>
+<p>Ďalej môžeme vyplniť polia ako <strong><em>Právny predpis, Výsledok</em></strong>
+(splnené/nesplnené podmienky), <strong><em>Námet zmluvy zaslaný žiadateľovi</em></strong>
+(áno, nie, netýka sa), <strong><em>Poradie, Poznámku</em></strong> a môžeme nahrať
+<strong><em>Prílohy</em></strong>. Keď máme všetko potrebné vyplnené, klikneme na zelené
+tlačidlo <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image360.jpeg" /></p>
+<p>Takto založená ŽoPPM sa dostane do zoznamu <strong>Vkladanie údajov – ŽoPPM</strong>
+a kedykoľvek sa k nej môžeme vrátiť a upraviť.</p>
+<h2 id="83-pridanie-projektu">8.3) Pridanie Projektu</h2>
+<p>Pre pridanie projektu v menu <strong>Vkladanie údajov</strong> rozklikneme záložku
+<strong>Projekty</strong>. Zobrazí sa zoznam projektov, ktoré systém eviduje.</p>
+<p><img alt="Obrázok" src="../media/image361.jpeg" /></p>
+<p>V zozname sa orientujeme pomocou stĺpcov <strong>Kód projektu</strong>, <strong>Názov</strong>,
+<strong>Celková suma</strong> a <strong>Mód Spracovania.</strong> Pre lepšiu orientáciu v zozname
+nám pomáha <strong>Filter</strong>. Pre pridanie Projektu klikneme na tlačidlo
+<strong>Vytvoriť projekt</strong>.</p>
+<p><img alt="Obrázok" src="../media/image362.jpeg" /></p>
+<p>V nasledovných poliach najskôr vyberieme jednu z možností, v závislosti
+od toho o aký typ projektu ide:</p>
+<ul>
+<li>
+<p><strong><em>Kód ŽoPPM</em></strong></p>
+</li>
+<li>
+<p><strong><em>Kód priameho vyzvania</em></strong></p>
+</li>
+<li>
+<p><strong><em>Opatrenie</em></strong></p>
+</li>
+</ul>
+<p>V prípade, že vytvárame projekt na priame vyzvanie, vyberieme <strong><em>Kód
+priameho vyzvania</em></strong> zo zoznamu, ale <u>NEvyplníme <strong><em>Kód ŽoPPM</em></strong> ani
+<strong><em>Opatrenie</em></strong></u>.</p>
+<p>V prípade, že vytvárame projekt na ŽoPPM, vyberieme <strong><em>Kód ŽoPPM</em></strong> zo
+zoznamu, ale <u>NEvyplníme <strong><em>Kód priameho vyzvania</em></strong> ani
+<strong><em>Opatrenie</em></strong>.</u>.</p>
+<p><strong>Upozornenie!</strong> <em>Nie je možné zaevidovať Projekt, ak v systéme nie je
+evidovaná ŽoPPM alebo priame vyzvanie, na ktoré chceme projekt pridať.</em></p>
+<p>V prípade, že vytvárame evidenčný projekt, vyberieme <strong><em>Opatrenie</em></strong> zo
+zoznamu, ale <u>NEvyplníme <strong><em>Kód priameho vyzvania</em></strong> ani <strong><em>Kód
+ŽoPPM</em></strong></u>.</p>
+<p><strong>Kód projektu</strong> systém automaticky vygeneruje po zvolení jednej
+z vyššie uvedených možností. Ak kód projektu systém nevygeneruje alebo
+nie je podľa nás správny, môžeme ho upraviť. Následne vyberieme <strong>Stav</strong>
+a uvedieme <strong>Názov projektu</strong>.</p>
+<p><img alt="Obrázok" src="../media/image363.jpeg" /></p>
+<p>V časti <strong>Výdavky</strong> môžeme vyplniť polia pre sumy ako <strong><em>Suma z Plánu
+obnovy bez DPH, Čiastka DPH z Plánu obnovy, Suma vlastných zdrojov
+žiadateľa, Suma verejných zdrojov okrem zdrojov EÚ</em></strong> a <strong><em>Suma
+verejných zdrojov EÚ</em></strong>. Následne klikneme na tlačidlo <strong>Prepočítať</strong>
+a pole <strong>Celková suma projektu</strong> sa prepočíta automaticky.</p>
+<p><img alt="Obrázok" src="../media/image322.jpeg" /></p>
+<p>V časti <strong>Zmluva</strong> môžeme vyplniť polia ako <strong><em>Číslo zmluvy, Dátum
+platnosti zmluvy, Dátum uzavretia zmluvy, Dátum zverejnenia zmluvy
+v CRZ</em></strong> a <strong><em>Link CRZ</em></strong>.</p>
+<p><img alt="Obrázok" src="../media/image364.jpeg" /></p>
+<p><strong>Upozornenie</strong>! <em>Pokiaľ sme nastavili stav projektu </em><em>Zazmluvnený</em><em>,
+údaje o zmluve musíme uviesť tiež.</em></p>
+<p>V časti prijímateľ klikneme na tlačidlo <strong>Pridať</strong>. Systém nám
+automaticky navrhne subjekt, ktorý už bol v ŽoPPM alebo v Priamom
+vyzvaní pridaný.</p>
+<p><img alt="Obrázok" src="../media/image324.jpeg" /></p>
+<p><img alt="Obrázok" src="../media/image365.jpeg" /></p>
+<p>Ak nám navrhnutý subjekt nevyhovuje, alebo vytvárame evidenčný projekt
+po kliknutí na tlačidlo pridať osobu/organizáciu a do poľa <strong>Výber
+osoby</strong> / <strong>Výber organizácie</strong> uvedieme meno a priezvisko/názov alebo
+IČO organizácie. Systém ISPO spárovaný s RFO/ RPO navrhne zoznam
+osôb/organizácií, z ktorých si vyberieme požadovanú a potvrdíme
+tlačidlom <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image325.jpeg" /></p>
+<p>Takto pridaný prijímateľ sa zobrazí v základnom tvare, systém však na
+pozadí dotiahne všetky údaje o prijímateľovi.</p>
+<p>Rovnakým spôsobom môžeme pridať aj partnera.</p>
+<p>V časti <strong>Poznámka</strong> môžeme uviesť doplňujúce údaje k projektu. Následne
+klikneme na tlačidlo <strong>Pridať</strong>, čím potvrdíme vytvorenie projektu.</p>
+<p><img alt="Obrázok" src="../media/image326.jpeg" /></p>
+<p>Takto založený projekt sa dostane do zoznamu <strong>Vkladanie údajov -
+Projekty</strong> a kedykoľvek sa k nemu môžeme vrátiť a upraviť.</p>
+<h2 id="84-pridanie-zop">8.4) Pridanie ŽoP</h2>
+<p>Pre pridanie žop v menu <strong>Vkladanie údajov</strong> rozklikneme záložku
+<strong>ŽoP</strong>. Zobrazí sa zoznam ŽoP, ktoré systém eviduje.</p>
+<p><img alt="Obrázok" src="../media/image366.jpeg" /></p>
+<p>V zozname sa orientujeme pomocou stĺpcov <strong><em>Kód žiadosti</em></strong>, <strong><em>Typ,
+Dátum predloženia žiadosti, Dátum vyplatenia, Požadovaná suma</em></strong> a
+<strong><em>Mód Spracovania.</em></strong> Pre lepšiu orientáciu v zozname nám pomáha
+<strong>Filter</strong>. Pre pridanie ŽoP klikneme na tlačidlo <strong>Vytvoriť žiadosť</strong>.</p>
+<p><img alt="Obrázok" src="../media/image367.jpeg" /></p>
+<p>Najskôr zo zoznamu vyberieme <strong>Kód projektu</strong>. Následne vyberieme <strong>Typ
+žiadosti o platbu</strong>. Systém automaticky vygeneruje <strong><em>Kód ŽoP</em></strong> na
+základe kódu projektu a typu žiadosti. Ak kód ŽoP systém nevygeneruje
+alebo nie je podľa nás správny, vieme ho upraviť.</p>
+<p><strong>Upozornenie!</strong> <em>Nie je možné pridať ŽoP, ak v systéme nie je evidovaný
+Projekt, na ktorý chceme žiadosť o platbu zaevidovať.</em></p>
+<p>Každý typ ŽoP má svoje číselné označenie. Pre kontrolu ich uvádzame a to
+nasledovne:</p>
+<ul>
+<li>
+<p>0 – Vrátenie (V)</p>
+</li>
+<li>
+<p>1 – Poskytnutie zálohy (PZ)</p>
+</li>
+<li>
+<p>2 – Zúčtovanie zálohy (ZZ)</p>
+</li>
+<li>
+<p>3 – Poskytnutie predfinancovania (PP)</p>
+</li>
+<li>
+<p>4 – Zúčtovanie predfinancovania (ZP)</p>
+</li>
+<li>
+<p>5 – Priebežná platba / Refundácia (PRP)</p>
+</li>
+</ul>
+<p>Ďalej uvedieme <strong><em>Dátum predloženia žiadosti</em></strong>, môžeme uviesť <strong><em>Dátum
+vyplatenia žiadosti</em></strong>. V prípade, že evidujeme zúčtovaciu ŽoP, uvedieme
+aj <strong><em>Relevanciu k ŽoP</em></strong> (kód ŽoP, ktorú ideme zúčtovať).</p>
+<p><img alt="Obrázok" src="../media/image368.jpeg" /></p>
+<p>V poliach pre vykázané a vyplatené výdavky vyplníme relevantné sumy ako
+<strong><em>Sumu z plánu obnovy bez DPH, Čiastku DPH</em></strong> <strong><em>z</em></strong> <strong><em>Plánu obnovy</em>,
+*Verejné zdroje mimo EÚ, Verejné zdroje EÚ</strong><em> a </em><strong>Vlastné zdroje</strong>.<em>
+Kliknutím na tlačidlo </em><em>Prepočítať</em><em> sa automaticky prepočíta suma
+</em><em>Celkom</em><em>. Uviesť môžeme tiež </em><em>Neoprávnené výdavky</em>*.</p>
+<p><img alt="Obrázok" src="../media/image369.jpeg" /></p>
+<p>V časti prijímateľ klikneme na tlačidlo <strong>Pridať</strong>. Systém nám
+automaticky navrhne subjekt, ktorý už bol pridaný v projekte.</p>
+<p><img alt="Obrázok" src="../media/image324.jpeg" /></p>
+<p><img alt="Obrázok" src="../media/image365.jpeg" /></p>
+<p>Ak nám navrhnutý subjekt nevyhovuje alebo vytvárame evidenčný projekt,
+po kliknutí na tlačidlo pridať osobu/organizáciu a do poľa <strong>Výber
+osoby</strong> / <strong>Výber organizácie</strong> uvedieme meno a priezvisko/názov alebo
+IČO organizácie. Systém ISPO spárovaný s RFO/ RPO navrhne zoznam
+osôb/organizácií, z ktorých si vyberieme požadovanú a potvrdíme
+tlačidlom <strong>Pridať</strong>.</p>
+<p><img alt="Obrázok" src="../media/image325.jpeg" /></p>
+<p>Takto pridaný prijímateľ sa zobrazí v základnom tvare, systém však na
+pozadí dotiahne všetky údaje o prijímateľovi. Rovnakým spôsobom môžeme
+pridať <strong>Dodávateľa</strong> a následne aj <strong>Subdodávateľov</strong>.</p>
+<p>V časti <strong>Poznámka</strong> môžeme uviesť doplňujúce údaje k ŽoP. Následne
+klikneme na tlačidlo <strong>Pridať</strong>, čím potvrdíme vytvorenie ŽoP.</p>
+<p><img alt="Obrázok" src="../media/image370.jpeg" /></p>
+<p>Takto založená ŽoP sa dostane do zoznamu <strong>Vkladanie údajov - ŽoP</strong>
+a kedykoľvek sa ku nej môžeme vrátiť a upraviť.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 ISPO – Plán obnovy | Dokumentácia systému
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Skop\u00edrovan\u00e9 do schr\u00e1nky", "clipboard.copy": "Kop\u00edrova\u0165 do schr\u00e1nky", "search.result.more.one": "1 \u010fal\u0161\u00ed na tejto str\u00e1nke", "search.result.more.other": "# \u010fal\u0161\u00edch na tejto str\u00e1nke", "search.result.none": "\u017diadne vyhovuj\u00face dokumenty", "search.result.one": "Vyhovuj\u00faci dokument: 1", "search.result.other": "Vyhovuj\u00face dokumenty: #", "search.result.placeholder": "Pre vyh\u013ead\u00e1vanie za\u010dni p\u00edsa\u0165", "search.result.term.missing": "Ch\u00fdbaj\u00faci", "select.version": "Vyberte verziu"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

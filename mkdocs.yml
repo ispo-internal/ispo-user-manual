@@ -11,7 +11,7 @@ theme:
   name: material
   language: sk
   logo: images/logo.svg
-  custom_dir: overrides
+  custom_dir: overrides/partials
   palette:
     primary: custom
     accent: custom
